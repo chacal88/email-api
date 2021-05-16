@@ -49,7 +49,6 @@ class MailJetMailer implements MailJetMailerInterface
                     ]
                 ]
             ];
-            return true;
             $response = $mailerClient->post(Resources::$Email, ['body' => $body]);
             return $response->success() ?? false;
         } catch (\Exception $e) {
