@@ -96,10 +96,6 @@ This command will perform a series of steps that you can follow via the terminal
 
 ### 2) Perform the following steps separately on your terminal within the project folder:
 
-## create the database
-
-`CREATE SCHEMA `mailer`;`
-
 `docker-compose up --build -d`
 
 `docker run --rm --interactive --tty -v $PWD/lumen:/app composer install`
