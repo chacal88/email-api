@@ -102,7 +102,7 @@ This command will perform a series of steps that you can follow via the terminal
 
 `docker exec -it email-api-php php /var/www/html/artisan migrate`
 
-The environment can be accessed at http: // localhost
+The environment can be accessed at http://localhost
 
 ### Important
 
@@ -138,7 +138,7 @@ POST /email/send
 ```
 
 sending by command
-docker exec -it email-api-php php /var/www/html/artisan email:start-transaction
+`docker exec -it email-api-php php /var/www/html/artisan email:start-transaction`
 
 ## executing the queue
-docker exec -it email-api-php php /var/www/html/artisan queue:work 
+`docker exec -it email-api-php php /var/www/html/artisan queue:work`
